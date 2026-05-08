@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shub Tales — Subarai Debbarma</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h2 class="sr-only">Interactive 3D website with animated floating geometry, particle field, and navigation</h2>
+<canvas id="c"></canvas>
+
+<div id="ui">
+  <nav id="nav">
+    <button class="nav-btn active" onclick="setPage('home')">Home</button>
+    <button class="nav-btn" onclick="setPage('about')">About</button>
+    <button class="nav-btn" onclick="setPage('work')">Work</button>
+    <button class="nav-btn" onclick="setPage('contact')">Contact</button>
+  </nav>
+
+  <div id="crosshair"></div>
+  <div id="page-home">
+    <div id="hero">
+      <h1>DIMENSION<br>STUDIO</h1>
+      <p class="sub">Creative — Digital — Spatial</p>
+      <div class="cta"><button class="btn-cta" onclick="setPage('work')">Explore Work ↗</button></div>
+    </div>
+    <div id="info-panel">
+      <div class="stat"><div class="val" id="fps-val">60</div><div class="lbl">FPS</div></div>
+      <div class="stat"><div class="val" id="obj-val">847</div><div class="lbl">Objects</div></div>
+      <div class="stat"><div class="val" id="rot-val">0°</div><div class="lbl">Rotation</div></div>
+    </div>
+  </div>
+
+  <div id="page-about">
+    <div class="page-title">// About</div>
+    <div class="page-body">We craft immersive digital experiences at the intersection of art and technology. Our work lives in three dimensions — pushing the boundaries of what the browser can render.</div>
+    <div class="page-grid">
+      <div class="page-card"><div class="pc-title">Founded</div><div class="pc-sub">2019, San Francisco</div></div>
+      <div class="page-card"><div class="pc-title">Team</div><div class="pc-sub">12 creatives</div></div>
+      <div class="page-card"><div class="pc-title">Focus</div><div class="pc-sub">WebGL / Three.js</div></div>
+      <div class="page-card"><div class="pc-title">Projects</div><div class="pc-sub">140+ delivered</div></div>
+    </div>
+  </div>
+
+  <div id="page-work">
+    <div class="page-title">// Selected Work</div>
+    <div class="page-grid" style="grid-template-columns:1fr;">
+      <div class="page-card"><div class="pc-title">Nebula — Data Visualisation</div><div class="pc-sub">Real-time 3D network graph for 10M+ nodes</div></div>
+      <div class="page-card"><div class="pc-title">Orbit — Spatial UI</div><div class="pc-sub">AR interface for industrial design review</div></div>
+      <div class="page-card"><div class="pc-title">Prism — Brand Identity</div><div class="pc-sub">Generative crystal animation system</div></div>
+    </div>
+  </div>
+
+  <div id="page-contact">
+    <div class="page-title">// Contact</div>
+    <div class="page-body">Ready to build something extraordinary?<br>Let's talk about your next project.</div>
+    <div class="page-grid" style="margin-top:24px;">
+      <div class="page-card"><div class="pc-title">Email</div><div class="pc-sub">hello@dimension.studio</div></div>
+      <div class="page-card"><div class="pc-title">Located</div><div class="pc-sub">San Francisco, CA</div></div>
+    </div>
+  </div>
+</div>
+<!-- script.js link-->
+<script src="script.js"></script>
+
+</body>
+</html>
